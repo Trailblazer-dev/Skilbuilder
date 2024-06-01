@@ -1,5 +1,8 @@
-/*let p= document.querySelector("p");
-p.innerHTML="Hello Kenya!";*/
+//let p= document.querySelector("p");
+//console.log(p.value);
+const username= document.getElementById("name");
+console.log(username.value);
+/*
 let g =[{
     name: "manchestercity",
     country: "England",
@@ -19,3 +22,4 @@ let g =[{
 }
 ]
 console.log(g[0].players[1]);
+*/
