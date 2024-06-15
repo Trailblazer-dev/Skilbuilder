@@ -15,4 +15,13 @@ function isValid(str){
 let reg=[];
 reg.push(isValid("+oaw<dkjie"));
 console.log(reg.length);
-let strNum=
+
+let movies =["Atlas","King kong","Runner"];
+let series = ["Manifest","The 100","Gotham"];//this is spread which allow to copy all element from one array to another"..."
+let entertainment = [...movies,...series];
+console.log(entertainment);
+const position=[2,4,6,8,10];
+let finalPosition = position.map(point=>point*2);
+console.log(finalPosition);
+let arr=movies.join(position);
+console.log(arr);
