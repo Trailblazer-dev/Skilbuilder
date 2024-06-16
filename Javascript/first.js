@@ -19,9 +19,14 @@ console.log(reg.length);
 let movies =["Atlas","King kong","Runner"];
 let series = ["Manifest","The 100","Gotham"];//this is spread which allow to copy all element from one array to another"..."
 let entertainment = [...movies,...series];
-console.log(entertainment);
+console.log(entertainment.length);
 const position=[2,4,6,8,10];
 let finalPosition = position.map(point=>point*2);
-console.log(finalPosition);
-let arr=movies.join(position);
-console.log(arr);
+//console.log(finalPosition);
+let arr=movies.join(' ');
+//console.log(arr);
+let bestmovie = series.find((movie)=>{
+    movie =="Gotham";
+    return movie;
+});
+//console.log(bestmovie);

@@ -23,3 +23,4 @@ let g =[{
 ]
 console.log(g[0].players[1]);
 */
+document.querySelector('.trail').innerText ="I love you";

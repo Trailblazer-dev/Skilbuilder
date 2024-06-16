@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        const change = ()=>{
+            document.querySelector('.btn p').innerHTML ="I would like you ...";
+        }
+        
+    </script>
 </head>
 <body>
-    <p>Hello there</p>
+    <p>Hello there </p>
     <form action="">
         <label for="name"></label>
         <textarea  placeholder="enter your name"  id="name">click here</textarea>
     </form>
+    <div class="trail">
+        <div class="btn">
+            <p>I will be there</p>
+            <button type="button" onclick="change()">try it</button>
+            <script>
+                document.write(5+5);
+            </script>
+        </div>
+    </div>
 </body>
 
-    <script src="script.js"></script>
+   <!--<script src="script.js"></script>-->
 </html>
