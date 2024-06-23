@@ -30,3 +30,26 @@ let bestmovie = series.find((movie)=>{
     return movie;
 });
 //console.log(bestmovie);
+const names = ["Tom", "Jessica", "Quincy", "Naomi"];
+console.log(names.sort(() => Math.random() - 0.5));
+//learning about the date object
+/*
+const date = new Date()
+const day = date.getDate();
+const month = date.getMonth()+1;
+const year = date.getFullYear();
+console.log(`Today is on ${day} /month ${month} /year ${year}`);
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+console.log(`The time is ${hours}:${minutes}:${seconds}`);
+*/
+//learning about destructuring objects
+const Team= {
+    HeadCoach:"Fernades",
+    Manager:"Ronaldo",
+    Players:["Messi","Ronaldo","Neymar"]
+}
+
+const {Manager,Players} =Team;
+console.log(Manager);
