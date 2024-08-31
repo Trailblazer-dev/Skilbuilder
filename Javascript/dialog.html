@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Dialog Example</title>
+    <style>
+        dialog {
+            border: solid 1px #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <button id="openDialogBtn">Open Styled Dialog</button>
+    <dialog id="myDialog">
+        <p>This is a styled dialog box!</p>
+        <button id="discardbtn" >Discard</button>
+        <button id="closeDialogBtn">Close</button>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById('myDialog');
+        const openDialogBtn = document.getElementById('openDialogBtn');
+        const closeDialogBtn = document.getElementById('closeDialogBtn');
+        const discardBtn = document.getElementById('discardbtn');
+
+        openDialogBtn.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        closeDialogBtn.addEventListener('click', () => {
+            dialog.close();
+        });
+        discardBtn.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+</body>
+</html>

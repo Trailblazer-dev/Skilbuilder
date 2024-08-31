@@ -1,11 +1,8 @@
-const btn = document.getElementById('addNew-btn');
-const form =document.getElementById("frm");
-const addbtn=document.getElementById("addbtn");
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("addNew-btn");
+  const form = document.getElementById("frm");
 
-btn.addEventListener('click', () => {
-     form.style.display="block"; 
-     btn.style.display="none";
-
-     
-
+  btn.addEventListener("click", () => {
+    form.classList.toggle("hidden");
+  });
 });

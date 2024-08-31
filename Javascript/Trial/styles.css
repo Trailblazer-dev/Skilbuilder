@@ -39,10 +39,13 @@ h2{
     border-radius: 5px;
     font-size: 1.2rem;
 }
+.hidden{
+    display: none;
+}
 .frm{
     color: var(--btn-text-color);
-    display:none;
 }
+
 .form{
     width: 90%;
     margin:0 auto;
